@@ -67,13 +67,13 @@
         // Function to safely add markers
         function addSafeMarker(place, iconPath) {
             try {
-                // Validate coordinates exist and are numbers
+                // Validate coordinates exist and are number
                 if (typeof place.lat !== 'undefined' && 
                     typeof place.lng !== 'undefined' &&
                     !isNaN(parseFloat(place.lat)) && 
                     !isNaN(parseFloat(place.lng))) {
                     
-                    // Ensure coordinates are within valid ranges
+                    // Ensure coordinates are within valid range
                     const lat = Math.max(-90, Math.min(90, parseFloat(place.lat)));
                     const lng = Math.max(-180, Math.min(180, parseFloat(place.lng)));
                     
