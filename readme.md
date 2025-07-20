@@ -17,6 +17,7 @@ docker-compose exec app composer install
 docker-compose exec app php artisan key:generate
 
 ---
+# for dev-compose (mz-db-laravel)
 
 docker-compose exec laravel.test composer install
 docker-compose exec laravel.test composer update
@@ -31,7 +32,7 @@ docker-compose exec laravel.test composer update
 
 ---
 # check docker images archi
-- docker image inspect sail-8.1-apache-dashboard/appsoe:latest --format='{{.Architecture}}'
+- docker image inspect imagename:latest --format='{{.Architecture}}'
 
 
 ```
