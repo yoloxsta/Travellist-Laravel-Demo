@@ -32,6 +32,7 @@ docker-compose exec laravel.test composer update
 
 ---
 # check docker images archi
+
 - docker image inspect imagename:latest --format='{{.Architecture}}'
 
 
