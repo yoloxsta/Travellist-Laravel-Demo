@@ -29,4 +29,9 @@ ls -ld storage/
 ls -l storage/framework/
 docker-compose exec laravel.test composer update
 
+---
+# check docker images archi
+- docker image inspect sail-8.1-apache-dashboard/appsoe:latest --format='{{.Architecture}}'
+
+
 ```
