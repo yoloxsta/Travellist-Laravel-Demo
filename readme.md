@@ -29,6 +29,7 @@ sudo chown -R $USER:$USER .
 ls -ld storage/
 ls -l storage/framework/
 docker-compose exec laravel.test composer update
+docker exec name cat /var/www/html/.env
 
 ---
 # check docker images archi
