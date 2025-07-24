@@ -40,4 +40,11 @@ docker exec name cat /var/www/html/.env
 docker build -t Name -f docker/production/Dockerfile .
 docker run -d -p 8002:80 --name something ImageName
 
+---
+sudo apt update
+sudo apt install cloud-guest-utils
+sudo growpart /dev/xvda 1
+sudo resize2fs /dev/xvda1
+df -h
+
 ```
