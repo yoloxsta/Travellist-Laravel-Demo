@@ -36,5 +36,8 @@ docker exec name cat /var/www/html/.env
 
 - docker image inspect imagename:latest --format='{{.Architecture}}'
 
+---
+docker build -t Name -f docker/production/Dockerfile .
+docker run -d -p 8002:80 --name something ImageName
 
 ```
